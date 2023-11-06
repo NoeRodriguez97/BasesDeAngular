@@ -1,0 +1,21 @@
+<h1>{{name}}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{name}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{age}}</dd>
+
+  <td>Método:</td>
+  <dd>{{NameAgeUnion}}</dd>
+
+  <td>Capitalizado</td>
+  <dd>{{NameCaptitalizad}}</dd>
+<button *ngIf="name != 'Loki'"
+class="btn btn-primary mx-2"
+(click)="changeName()">Cambiar Nombre</button>
+<button class="btn btn-primary" (click)="changeAge()" *ngIf="age !=30">Cambiar Edad</button>
+
+
+</dl>
